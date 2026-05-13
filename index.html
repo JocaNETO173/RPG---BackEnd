@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forja de Heróis</h1>
+    <label for="nome">Nome do seu Herói: <br></label>
+    <input name="nome" type="text" id="nome">
+    <br> __________________________________ <br>
+    <label for="classes">
+        <h2>Selecione sua classe:</h2>
+    </label>
+    <select name="classes" id="classes">
+        <option value="">Selecione uma opção:</option>
+        <option value="guerreiro">Guerreiro</option>
+        <option value="mago">Mago</option>
+        <option value="arqueiro">Arqueiro</option>
+    </select>
+    <br> __________________________________ <br>
+    <label for="arma">
+        <h2>Selecione sua arma:</h2>
+    </label>
+    <input name="arma" type="text" id="arma">
+    <input type="submit" value="OK">
+    <div class="dado">
+        <p>Rolagem do Dado: <br></p>
+        <p id="valor-dado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
