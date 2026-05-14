@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 25px;
+}
+  
+.arena {
+    font-family: "MedievalSharp", cursive;
+    border: solid 2px white;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.barra, h1, h2 {
+    text-shadow: 0px 0px 10px white;
+    text-align: center;
+}
+
+.controles {
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select{
+    font-family: "MedievalSharp", cursive;
+    padding: 10px;
+    background: black;
+    border: solid 2px white;
+    color: white;
+}
+
+button {
+    font-family: "MedievalSharp", cursive;
+    padding: 15px;
+    background: black;
+    border: solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    color: red;
+}
+
+#segredo {
+    display: inline;
+    color: red;
+    border: solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#log{
+    text-align: center;
+    min-height: 100px;
+    border-left: 4px solid white;
+    background: rgb(44, 44, 44);
+    padding: 10px;
+}
+
+.dado {
+    text-align: center;
+}
+
+#valor-dado {
+    display:inline;
+    padding: 5px;
+    border: solid white;
+}
+
+.critico {
+    background: red;
+}

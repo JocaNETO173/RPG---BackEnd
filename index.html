@@ -4,33 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Forja de Heróis</h1>
-    <label for="nome">Nome do seu Herói: <br></label>
-    <input name="nome" type="text" id="nome">
-    <br> __________________________________ <br>
-    <label for="classes">
-        <h2>Selecione sua classe:</h2>
-    </label>
-    <select name="classes" id="classes">
-        <option value="">Selecione uma opção:</option>
-        <option value="guerreiro">Guerreiro</option>
-        <option value="mago">Mago</option>
-        <option value="arqueiro">Arqueiro</option>
-    </select>
-    <br> __________________________________ <br>
-    <label for="arma">
-        <h2>Selecione sua arma:</h2>
-    </label>
-    <input name="arma" type="text" id="arma">
-    <input type="submit" value="OK">
-    <div class="dado">
-        <p>Rolagem do Dado: <br></p>
-        <p id="valor-dado"></p>
+    <div class="arena">
+        <div id="segredo">X</div>
+        <h1>⚔️Forja de Heróis⚔️</h1>
+        <div class="controles">
+            <label for="nome">Nome do seu Herói: <br></label>
+            <input name="nome" type="text" id="nome">
+            <div class="barra"><br> __________________________________</div>
+            <label for="classes">
+                <h2>Selecione sua classe:</h2>
+            </label>
+            <select name="classes" id="classes">
+                <option value="">Selecione uma opção:</option>
+                <option value="guerreiro">Guerreiro🤺</option>
+                <option value="mago">Mago🧙‍♂️</option>
+                <option value="arqueiro">Arqueiro🏹</option>
+            </select>
+            <div class="barra">__________________________________</div>
+            <label for="arma">
+                <h2>Selecione sua arma:</h2>
+            </label>
+            <input name="arma" type="text" id="arma" placeholder="Ex: Espada, Cajado, Arco"><br>
+            <button onclick="iniciar()">INICIAR</button>
+            <div class="barra">__________________________________</div>
+            </div>
+            <div id="log">Aguardando Desafiante...</div>
+            <div class="dado">
+                <p>Rolagem do Dado: <br></p>
+                <p id="valor-dado"></p>
+        </div>
+        
     </div>
+
     <script src="script.js"></script>
 </body>
 
