@@ -75,5 +75,13 @@ button:hover {
 }
 
 .critico {
-    background: red;
+    background: rgb(255, 0, 0);
+}
+
+.sucesso {
+    background: rgb(36, 160, 36);
+}
+
+.derrota {
+    background: rgb(153, 120, 120);
 }
