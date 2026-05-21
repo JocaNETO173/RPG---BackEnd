@@ -50,7 +50,7 @@ function lutar(){
             } else if (dado > 17) {
                 resultado += "<span class='sucesso'>SUCESSO: Você conseguiu calcular a trajetória e força do vento a seu favor para acertar a cabeça do seu inimigo com sua arma não convencional, lhe garantindo uma vitória surpreendente!!</span>"
             } else {
-                resultado += "<span class='derrota'>DERROTA: Você deixou o inimigo se aproximar de mais, e você ficou encurralado e morreu!</span>"
+                resultado += "<span class='derrota'>DERROTA: Você deixou o inimigo se aproximar de mais, você ficou encurralado e morreu!</span>"
             }
             break;
         default: 
