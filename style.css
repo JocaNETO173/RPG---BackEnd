@@ -76,12 +76,15 @@ button:hover {
 
 .critico {
     background: rgb(255, 0, 0);
+    font-weight: bold;
 }
 
 .sucesso {
     background: rgb(36, 160, 36);
+    font-weight: bold;
 }
 
 .derrota {
     background: rgb(153, 120, 120);
+    font-weight: bold;
 }

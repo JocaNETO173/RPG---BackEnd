@@ -13,10 +13,11 @@ function lutar(){
 
 
 
-    let resultado  = `<strong>${nome}</strong>, o <strong>${classe}</strong> com <strong>${arma}</strong>.<br>`
+    let resultado  = `<strong>${nome}</strong>, o <strong>${classe}</strong> luta com sua arma: <strong>${arma}</strong>.<br>`
     const valorDado = document.getElementById('valor-dado');
     if(dado === 20){
         valorDado.classList.add('critico');
+        resultado += "<span class='critico'>CRÍTICO</span><br>";
 
     } else {
         valorDado.classList.remove('critico');
@@ -40,12 +41,21 @@ function lutar(){
             } else if(dado === 20){
                 resultado += "<span class = 'sucesso'>SUCESSO: Você, pela sorte divina de seus antepassados, com um ataque furtivo alveja seu inimigo, mesmo sem seu cajado!</span>"
             } else {
-                resultado += "<span></span>"
-            };
+                resultado += "<span class='derrota'>DERROTA: Vocẽ desonrou seus mestres e foi morto brutalmente.</span>"
+            }
+            break;
         case "arqueiro":
-            if(arma.toLowerCase() === "arco");
+            if(arma.toLowerCase() === "arco" && dado > 9){
+                resultado += "<span class='sucesso'>SUCESSO: Você deu um tiro certeiro na cabeça do inimigo!</span>"
+            } else if (dado > 17) {
+                resultado += "<span class='sucesso'>SUCESSO: Você conseguiu calcular a trajetória e força do vento a seu favor para acertar a cabeça do seu inimigo com sua arma não convencional, lhe garantindo uma vitória surpreendente!!</span>"
+            } else {
+                resultado += "<span class='derrota'>DERROTA: Você deixou o inimigo se aproximar de mais, e você ficou encurralado e morreu!</span>"
+            }
+            break;
         default: 
             resultado += 'Aguardando Desafiante...';
-            log.innerHTML = resultado;
+            break;
     }
+    log.innerHTML = resultado;
 }
