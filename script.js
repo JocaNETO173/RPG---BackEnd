@@ -53,9 +53,9 @@ function lutar(){
                 resultado += "<span class='derrota'>DERROTA: Você deixou o inimigo se aproximar de mais, você ficou encurralado e morreu!</span>"
             }
             break;
-        default: 
-            resultado += 'Aguardando Desafiante...';
-            break;
-    }
+        default:
+            resultado += "Você ficou paralisado de medo.";
+            }
+   
     log.innerHTML = resultado;
 }
